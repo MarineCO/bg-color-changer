@@ -8,7 +8,7 @@
 		},
 
 		listeners: function() {
-			$('.range').on('click', this.getVal);
+			$('.range').on('input', this.getVal);
 		},
 
 		getVal: function() {
@@ -22,8 +22,6 @@
 			$('#result').html(r + ', ' + g + ', ' + b + ', ' + a);
 
 		}
-
-
 	};
 
 	$(document).ready(function() {
